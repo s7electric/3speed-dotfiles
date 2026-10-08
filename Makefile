@@ -1,3 +1,3 @@
 install:
-	mkdir ~/.config
-	cp * ~/.config -r
+	mkdir ../.config
+	cp * ../.config -r
