@@ -21,9 +21,9 @@ waybar/keyboard-status.sh
 waybar/vpn-status.sh
 waybar/vpn-toggle.sh
 waybar/wifi-refresh.sh
-wofi/wofi-input.sh
-wofi/wofi-output.sh
 ```
 For the VPN scripts, wireguard needs to be installed and configured. Otherwise, the button will not appear on waybar. The link name within the script can be changed depending on usage.
 
 For the keyboard script, wvkbd-mobintl needs to be installed. Otherwise, the button will not appear on waybar.
+
+Finally, the wifi-refresh script depends on systemd-networkd, though this is easily tweaked.
