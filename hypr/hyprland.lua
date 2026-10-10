@@ -41,7 +41,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "thunar"
 local drun = "wofi --show drun --gtk-dark"
-local dmenu = "~/.config/wofi/wofi_output.sh $(~/.config/wofi/wofi_input.sh | wofi --show dmenu)"
+local dmenu = "~/.config/wofi/wofi-output.sh $(~/.config/wofi/wofi-input.sh | wofi --show dmenu)"
 local browser = "firefox"
 local screenSnipEdit = "grim -g \"$(slurp)\" - | swappy -f -"
 local screenSnip = "grim -g \"$(slurp)\" - | wl-copy"
