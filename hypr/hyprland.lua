@@ -161,7 +161,7 @@ hl.config({
 hl.on("hyprland.start", function()
     -- hl.exec_cmd(terminal)
     hl.exec_cmd("waybar")
-    hl.exec_cmd("hyprpaper -c /home/3speed/.config/hypr/hyprpaper.conf")
+    hl.exec_cmd("hyprpaper -c $HOME/.config/hypr/hyprpaper.conf")
     hl.exec_cmd("hyprsunset -t 3000 -g 95")
     hl.exec_cmd(browser)
     hl.exec_cmd(notification)

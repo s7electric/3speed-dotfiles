@@ -5,6 +5,7 @@ hyprlock
 hyprpaper
 waybar
 wofi
+kitty
 ```
 
 # Usage
