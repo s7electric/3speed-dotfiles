@@ -45,6 +45,7 @@ local dmenu = "~/.config/wofi/wofi-output.sh $(~/.config/wofi/wofi-input.sh | wo
 local browser = "firefox"
 local screenSnipEdit = "grim -g \"$(slurp)\" - | swappy -f -"
 local screenSnip = "grim -g \"$(slurp)\" - | wl-copy"
+local screenSnipOneshot = "f=$(mktemp --suffix=.png) && grim \"$f\" && pinta \"$f\""
 local notification = "dunst"
 local emergencyShell = "kitty /bin/sh"
 
@@ -374,6 +375,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = false
 
 hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd(screenSnipEdit))
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(screenSnip))
+hl.bind("Print", hl.dsp.exec_cmd(screenSnipOneshot))
 
 hl.window_rule({
     match = {
